@@ -4,17 +4,17 @@
 ?>
 <?php include("header.html") ?>
 <body>
-	<h2>Ingrese su nombre de usuario y contraseña</h2>
+	<center><h2>Ingrese su nombre de usuario y contraseña</h2></center>
 	<br>
     <form class="form-signin" role="form" action="login_validation.php" method="post">
         <?php echo $msg; ?>
-        <input type="text" name="username" placeholder="Nombre de Usuario" required autofocus>
+        <center><input type="text" name="username" placeholder="Nombre de Usuario" required autofocus></center>
         <br>
         <hr>
-        <input type="password" name="password" placeholder="Contraseña" required>
+        <center><input type="password" name="password" placeholder="Contraseña" required></center>
         <br>
         <hr>
-        <button type="submit" name="login"> Iniciar sesión </button>
+        <center><button type="submit" name="login"> Iniciar sesión </button></center>
     </form>
 
 </body>
