@@ -12,7 +12,7 @@ $query1 = "
 SELECT compania_aerea.nombre
 FROM vuelo
 LEFT JOIN compania_aerea ON compania_aerea.codigo = vuelo.compania_codigo
-WHERE compania_aerea.codigo ILIKE :codigo_compania_aerea;
+WHERE compania_aerea.codigo = codigo_compania_aerea;
 ";
 $result = $db -> prepare($query);
 $result -> bindParam("codigo_compania_aerea", $codigo_compania_aerea);
@@ -23,7 +23,7 @@ $query_aceptados = "
 SELECT codigo, compania_codigo, aeronave_codigo, fecha_salida, fecha_llegada
 FROM vuelo
 WHERE estado = 'aceptado' AND
-compania_codigo ILIKE : codigo_compania_aerea;
+compania_codigo = codigo_compania_aerea;
 ";
 $result2 = $db -> prepare($query);
 $result2 -> bindParam("codigo_compania_aerea", $codigo_compania_aerea);
@@ -34,7 +34,7 @@ $query_rechazados = "
 SELECT codigo, compania_codigo, aeronave_codigo, fecha_salida, fecha_llegada
 FROM vuelo
 WHERE estado = 'rechazado' AND
-compania_codigo ILIKE : codigo_compania_aerea;
+compania_codigo = codigo_compania_aerea;
 ";
 $result3 = $db -> prepare($query);
 $result3 -> bindParam("codigo_compania_aerea", $codigo_compania_aerea);
