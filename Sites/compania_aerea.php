@@ -1,4 +1,4 @@
-<?php include("header.html") ?>
+<?php require("header.php") ?>
 <?php
 require("connection.php");
 
