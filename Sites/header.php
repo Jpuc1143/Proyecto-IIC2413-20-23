@@ -11,5 +11,9 @@
 	<nav class="navbar fixed-top bg-info">
 		<div class="container-fluid">
 			<span class="navbar-brand text-light">AirInfo✈️</span>
+		<?php if (isset($_SESSION['usuario_id'])) {
+		echo '<a class="btn btn-danger" href="./logout.php">Logout</a>';
+		}
+		?>
 	</nav>
 	<main class="mx-5 pt-5 mt-5">

@@ -2,8 +2,8 @@
 session_start();
 
 if (isset($_SESSION['usuario_id'])) {
-	// TODO redirijir
-	echo "login hecho";
+	header('Location: ./perfil.php');
+	exit();
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {

@@ -1,8 +1,8 @@
 <?php 
-    session_start();
-    unset($_SESSION['timeout']);
-    unset($_SESSION['password']);
-    unset($_SESSION['username']);
-    $_SESSION['valid'] = false;
-    header('Refresh: 0; url = ../index.php')
+session_start();
+unset($_SESSION['usuario_id']);
+unset($_SESSION['usuario_nombre']);
+unset($_SESSION['usuario_tipo']);
+header('Refresh: 0; url = ../index.php');
+exit();
 ?>
