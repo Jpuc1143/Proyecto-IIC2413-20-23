@@ -3,6 +3,7 @@
 <body>
 <?php
 require("./config/databaseconnect.php");
+print_r($_POST);
 $fecha = $_POST["fecha"];
 $ciudad_o = $_POST["ciudad_o"];
 $ciudad_d = $_POST["ciudad_d"];
@@ -17,11 +18,11 @@ $query = "SELECT vuelo.codigo, vuelo.fecha_salida, vuelo.fecha_llegada, ciudad.n
             AND ciudad.nombre_ciudad LIKE '%$ciudad_o%'
             AND c_dos.nombre_ciudad LIKE '%$ciudad_d%'
             ";
-$result = $db1 -> prepare($query);
+$result = $db -> prepare($query);
 $result -> execute();
 $data = $result -> fetchAll();
 
-echo "Vuelos disponibles para la fecha $fecha en tre las ciudades $ciudad_o y $ciudad_d";
+echo "Vuelos disponibles para la fecha $fecha entre las ciudades $ciudad_o y $ciudad_d";
 ?>
 <form action="ruta">
 	<input type="text" name="pasaporte_1" value="Código de Pasaporte">
