@@ -5,7 +5,6 @@ $db_impar -> beginTransaction();
 
 $db_impar -> exec("INSERT INTO Usuarios VALUES (default,'DGAC', 'admin', 'admin') ON CONFLICT DO NOTHING;");
 
-// TODO contraseñas segun enunciado 
 $db_impar -> exec("
 	INSERT INTO usuarios (usuario, contrasena, tipo)
 	SELECT codigo, to_char(random()*100000000, 'fm00000000'),

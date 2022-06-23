@@ -19,7 +19,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <center><h2>Ingrese su nombre de usuario y contraseña</h2></center>
 <br>
 <form class="form-signin" role="form" method="post">
-	<?php //TODO echo $msg; ?>
 	<center><input type="text" name="usuario_nombre" placeholder="Nombre de Usuario" required autofocus></center>
 	<br>
 	<center><input type="password" name="usuario_contrasena" placeholder="Contraseña" required></center>

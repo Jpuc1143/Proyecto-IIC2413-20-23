@@ -2,7 +2,8 @@
 session_start();
 
 if (!isset($_SESSION['usuario_id'])) {
-	// TODO redirijir a index.php
+	header('Location: ./index.php');
+	exit();
 }
 
 ?>
