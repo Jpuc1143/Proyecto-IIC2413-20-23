@@ -13,7 +13,7 @@ if (!isset($_SESSION['usuario_id'])) {
 if (isset($_SESSION['usuario_id'])) {
 	switch ($_SESSION['usuario_tipo']) {
 		case 'admin':
-			echo 'admin';
+			require("./admin_vista.php");
 			break;
 		case 'compania_aerea':
 			require("./compania_aerea.php");
