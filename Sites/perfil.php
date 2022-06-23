@@ -15,7 +15,7 @@ if (isset($_SESSION['usuario_id'])) {
 			echo 'admin';
 			break;
 		case 'compania_aerea':
-			echo 'compania';
+			require("./compania_aerea.php");
 			break;
 		case 'pasajero':
 			echo 'pasajero';
