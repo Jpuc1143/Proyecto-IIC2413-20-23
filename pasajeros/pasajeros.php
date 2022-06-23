@@ -2,52 +2,40 @@
 <html>
 <body>
 <?php
-require("./config/databaseconnect.php"); 
-$id = $_POST["id"];
-$username = $_POST["username"];
+require("./queries/consulta_1.php");
+require("./queries/consulta_2.php");
+require("./queries/consulta_3.php");
 
-$query = "SELECT username, pasaporte
-        FROM persona, usuario
-        WHERE username LIKE '%$username%' 
-        AND persona.id LIKE '%$id%'";
-$result = $db2 -> prepare($query);
-$result -> execute();
-$data = $result -> fetchAll();
-
-$query2 = "SELECT ciudad_id, nombre_ciudad
-        FROM ciudad
-        ORDER BY nombre_ciudad DESC";
-$result2 = $db -> prepare($query);
-$result2 -> execute();
-$data2 = $result -> fetchAll();
 ?>
 
 <table>
     <tr>
         <th> Nombre: </th>
-        <th> Pasaporte: <t/>
+        <th> Pasaporte: </th>
     </tr>
-    <?php foreach ($data as $d); ?>
+    <?php foreach ($data as $d => $value){?>
         <tr>
-            <td><?php echo $d[0]; ?></td>
-            <td><?php echo $d[1]; ?></td>
-        </tr>
+            <td><?php echo $data[0]['nombre']; ?></td>
+            <td><?php echo $data[0]['pasaporte']; ?></td>
+        </tr><?php
+    }; ?>
 </table>
 
 <table>
     <tr>
         <th> Reservas Actuales: </th>
     </tr>
-    <?php foreach ($data3 as $d3); ?>
+    <?php foreach ($data3 as $d3){ ?>
         <tr>
             <td><?php 
             $i = 0;
             while($i < count($d3))
             {
-	            echo $d3[$i]."\n";
+	            echo $d3[$i]['codigo']."\n";
 	            $i++;
             } ?></td>
-        </tr>
+        </tr><?php
+    }; ?>
 </table>
 
 
@@ -57,7 +45,7 @@ $data2 = $result -> fetchAll();
     <?php 
         foreach($data2 as $d2 => $id){
             ?>
-            <option value="<?php echo $id; ?>"><?php echo $d2; ?></option>
+            <option value="<?php echo $id; ?>"><?php echo $id['nombre_ciudad']; ?></option>
             <?php
         };
     ?></select></div>
@@ -66,7 +54,7 @@ $data2 = $result -> fetchAll();
     <?php 
         foreach($data2 as $d2 => $id){
             ?>
-            <option value="<?php echo $id; ?>"><?php echo $d2; ?></option>
+            <option value="<?php echo $id; ?>"><?php echo $id['nombre_ciudad']; ?></option>
             <?php
         };
     ?></select></div>
