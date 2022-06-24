@@ -3,10 +3,11 @@
 <body>
 <?php
 require("./config/databaseconnect.php");
+
 print_r($_POST);
 $fecha = $_POST["fecha"];
-$ciudad_o = $_POST["ciudad_o"];
-$ciudad_d = $_POST["ciudad_d"];
+$ciudad_o = $_POST["origen"];
+$ciudad_d = $_POST["destino"];
 
 $query = "SELECT vuelo.codigo, vuelo.fecha_salida, vuelo.fecha_llegada, ciudad.nombre_ciudad, c_dos.nombre_ciudad
             FROM vuelo, aerodromo, ciudad, ciudad AS c_dos, aerodromo AS dos
