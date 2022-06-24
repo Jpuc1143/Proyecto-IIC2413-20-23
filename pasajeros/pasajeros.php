@@ -25,15 +25,11 @@ require("./queries/consulta_3.php");
     <tr>
         <th> Reservas Actuales: </th>
     </tr>
-    <?php foreach ($data3 as $d3){ ?>
+    <?php foreach ($data3 as $d3 => $reserva){ ?>
         <tr>
             <td><?php 
-            $i = 0;
-            while($i < count($d3))
-            {
-	            echo $d3[$i]['codigo']."\n";
-	            $i++;
-            } ?></td>
+            echo $reserva[0]."\n";
+	        ?></td>
         </tr><?php
     }; ?>
 </table>
@@ -58,7 +54,7 @@ require("./queries/consulta_3.php");
             <?php
         };
     ?></select></div>
-    <div><input type="submit" value="Buscar"></div>
+    <div><button type="submit" value="Buscar"> Buscar</div>
 </form>
 </body>
-</html>
+</html> 
