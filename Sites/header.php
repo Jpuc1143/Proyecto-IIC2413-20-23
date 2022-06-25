@@ -19,7 +19,7 @@
 	<main class="mx-5 pt-5 mt-5">
 <?php 
 	if (isset($_SESSION["msg"])) {
-		echo $_SESSION["msg"];
+		echo '<div class="alert alert-danger">'.$_SESSION['msg']."</div>";
 		unset($_SESSION["msg"]);
 	}
 ?>

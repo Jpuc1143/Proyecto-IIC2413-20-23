@@ -17,13 +17,13 @@ if (isset($_POST['usuario_nombre']) && isset($_POST["usuario_contrasena"])) {
 		header('Location: ./perfil.php');
 		exit();
 	} else {
-		$_SESSION['msg'] = "El usuario no existe o la contraseña está incorrecta.";
+		$_SESSION['msg'] = "El usuario no existe o la contraseña es incorrecta.";
 		header('Location: ./index.php');
 		exit();
 	}
 } else {
 	$_SESSION['msg'] = "Hubo un error en la solicitud.";
-	header('Location: ./index.php', 422);
+	header('Location: ./index.php');
 	exit();
 }
 
