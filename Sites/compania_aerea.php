@@ -54,6 +54,25 @@ $vuelos_rechazados = $result3 -> fetchAll(PDO::FETCH_NUM);
         echo '<tbody>';
         for($i=0;$i<count($vuelos_aceptados);$i++) {
             echo "<tr>";
+            if ($i=0){
+                echo "<td>Código Vuelo</td>";
+            }
+            if ($i=1){
+                echo "<td>Código Compañía Aérea</td>";
+            }
+            if ($i=2){
+                echo "<td>Código Aeronave</td>";
+            }
+            if ($i=3){
+                echo "<td>Fecha Salida</td>";
+            }
+            if ($i=4){
+                echo "<td>Fecha Llegada</td>";
+            }
+            echo "</tr>";
+        }
+        for($i=0;$i<count($vuelos_aceptados);$i++) {
+            echo "<tr>";
             foreach($vuelos_aceptados[$i] as $cell) {
                 echo "<td>$cell</td>";
             }
@@ -67,6 +86,25 @@ $vuelos_rechazados = $result3 -> fetchAll(PDO::FETCH_NUM);
     if (isset($vuelos_rechazados)) {
         echo '<table class="table table-striped table-hover">';
         echo '<tbody>';
+        for($i=0;$i<count($vuelos_rechazados);$i++) {
+            echo "<tr>";
+            if ($i=0){
+                echo "<td>Código Vuelo</td>";
+            }
+            if ($i=1){
+                echo "<td>Código Compañía Aérea</td>";
+            }
+            if ($i=2){
+                echo "<td>Código Aeronave</td>";
+            }
+            if ($i=3){
+                echo "<td>Fecha Salida</td>";
+            }
+            if ($i=4){
+                echo "<td>Fecha Llegada</td>";
+            }
+            echo "</tr>";
+        }
         for($i=0;$i<count($vuelos_rechazados);$i++) {
             echo "<tr>";
             foreach($vuelos_rechazados[$i] as $cell) {
