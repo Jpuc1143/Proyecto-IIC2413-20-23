@@ -41,7 +41,7 @@ require("./queries/consulta_3.php");
     <?php 
         foreach($data2 as $d2 => $id){
             ?>
-            <option value="<?php echo $id; ?>"><?php echo $id['nombre_ciudad']; ?></option>
+            <option value="<?php echo $id['ciudad_id']; ?>"><?php echo $id['nombre_ciudad']; ?></option>
             <?php
         };
     ?></select></div>
@@ -50,7 +50,7 @@ require("./queries/consulta_3.php");
     <?php 
         foreach($data2 as $d2 => $id){
             ?>
-            <option value="<?php echo $id; ?>"><?php echo $id['nombre_ciudad']; ?></option>
+            <option value="<?php echo $id['ciudad_id']; ?>"><?php echo $id['nombre_ciudad']; ?></option>
             <?php
         };
     ?></select></div>
