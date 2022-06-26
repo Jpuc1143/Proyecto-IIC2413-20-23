@@ -45,7 +45,7 @@ $vuelos_rechazados = $result3 -> fetchAll(PDO::FETCH_NUM);
 <?php 
     <h1>Vista de Compañia Aérea</h1>
     if (isset($_SESSION['username'])){
-    <h2> Bienvenido echo $nombre_compania_aerea echo count($vuelos_aceptados)</h2>>
+    <h2> Bienvenidoo echo $nombre_compania_aerea echo count($vuelos_aceptados)</h2>>
     <br>
     <hr>
     <h3> Su lista de vuelos aceptados es la siguiente</h3>
