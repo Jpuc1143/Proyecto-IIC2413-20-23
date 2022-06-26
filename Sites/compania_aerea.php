@@ -39,11 +39,11 @@ $result3 -> bindParam("codigo_compania_aerea", $codigo_compania_aerea);
 $result3 -> execute();
 $vuelos_rechazados = $result3 -> fetchAll(PDO::FETCH_NUM);
 #y se crea el array del header para la visualización de la página
-$header = array("Código Vuelo", "Código Compañía Aérea", "Código Aeronave", "Fecha de Salida", "Fecha Llegada");
+$header = array("Código Vuelo", "Código Compañía Aérea", "Código Aeronave", "Fecha de Salida", "Fecha de Llegada");
 ?>
 <body>
     <h1>Vista de Compañia Aérea</h1>
-    <?php<h2> Bienvenido echo $nombre_compania_aerea</h2>?> 
+    <?php<h2> Bienvenido echo "$nombre_compania_aerea"</h2>?> 
     <br>
     <hr>
     <h3> Su lista de vuelos aceptados es la siguiente</h3>
