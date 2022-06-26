@@ -7,18 +7,18 @@
     * Usuario: DGAC
     * Contraseña: admin
 * **Usuario tipo compania_aerea**:
-    1. * Usuario: ADC
+       * Usuario: ADC
        * Contraseña: 15531870
-    2. * Usuario: AZI
+       * Usuario: AZI
        * Contraseña: 39797340
-    3. * Usuario: BTA
+       * Usuario: BTA
        * Contraseña: 99700060
 * **Usuario tipo pasajero**:
-    1. * Usuario: F08731569
+       * Usuario: F08731569
        * Contraseña: DiaF0831
-    2. * Usuario: 088716397
+       * Usuario: 088716397
        * Contraseña: Gab08821
-    3. * Usuario: V51246373
+       * Usuario: V51246373
        * Contraseña: LatV5158
 
 
