@@ -43,7 +43,6 @@ $header = array("Código Vuelo", "Código Compañía Aérea", "Código Aeronave"
 ?>
 <body>
 <?php
-    <h1>Vista de Compañia Aérea</h1>
     <h2> Bienvenido echo "$nombre_compania_aerea"</h2>
     <br>
     <hr>
