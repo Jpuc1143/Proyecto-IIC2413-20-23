@@ -26,6 +26,8 @@
 * Se implementó un mapa que muestra todos los vuelos pertinentes asociados a un usuario. 
 De esta forma se muestras líneas que unen los puntos de salida y de llegada de cada vuelo, así se conoce geográficamente desde donde y hacia donde realiza el viaje el vuelo determinado.
 
+* Los datos con los cuales se modificó la base de datos, fueron extraidos de la siguiente página web: https://www.openaip.net
+
 ## Corrección de los requerimientos no intuitivos de esta entrega
 
 ## Forma de registrar contraseñas a usuarios existentes
