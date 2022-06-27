@@ -24,7 +24,7 @@
 
 ## Corección funcionalidad adicional implementada
 * Se implementó un mapa que muestra todos los vuelos pertinentes asociados a un usuario. 
-De esta forma se muestras líneas que unen los puntos de salida y de llegada de cada vuelo.
+De esta forma se muestras líneas que unen los puntos de salida y de llegada de cada vuelo, así se conoce geográficamente desde donde y hacia donde realiza el viaje el vuelo determinado.
 
 ## Corrección de los requerimientos no intuitivos de esta entrega
 
