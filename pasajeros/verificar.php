@@ -27,7 +27,7 @@ else{
         FROM persona
         WHERE pasaporte = $p1
         ;";
-    $result = $db -> prepare($query);
+    $result = $db2 -> prepare($query);
     $result -> execute();
     $data = $result -> fetchAll();
 
@@ -35,7 +35,7 @@ else{
         FROM persona
         WHERE pasaporte = $p2
         ;";
-    $result2 = $db -> prepare($query2);
+    $result2 = $db2 -> prepare($query2);
     $result2 -> execute();
     $data2 = $result2 -> fetchAll();
 
@@ -43,7 +43,7 @@ else{
             FROM persona
             WHERE pasaporte = $p3
             ;";
-    $result3 = $db -> prepare($query3);
+    $result3 = $db2 -> prepare($query3);
     $result3 -> execute();
     $data3 = $result3 -> fetchAll();
     if (!$data || !$data2 ||!$data3){
@@ -61,7 +61,7 @@ else{
         AND ticket.vuelo_id = vuelo.id
         AND cliente.id = reserva.cliente.id
         ;";
-        $result5 = $db -> prepare($query5);
+        $result5 = $db2 -> prepare($query5);
         $result5 -> execute();
         $data5 = $result5 -> fetchAll();
 
@@ -76,7 +76,7 @@ else{
         AND ticket.vuelo_id = vuelo.id
         AND cliente.id = reserva.cliente.id
         ;";
-        $result6 = $db -> prepare($query6);
+        $result6 = $db2 -> prepare($query6);
         $result6 -> execute();
         $data6 = $result6 -> fetchAll();
 
@@ -91,12 +91,16 @@ else{
         AND ticket.vuelo_id = vuelo.id
         AND cliente.id = reserva.cliente.id
         ;";
-        $result7 = $db -> prepare($query7);
+        $result7 = $db2 -> prepare($query7);
         $result7 -> execute();
         $data7 = $result7 -> fetchAll();
         
         if(!$data5 && !$data6 && !$data7 ){
-            #procedimiento almacenado
+            $query8 = "SELECT insertar_reserva()
+            ;";
+            $result8 = $db2 -> prepare($query8);
+            $result8 -> execute();
+            $data8 = $result8 -> fetchAll();
         }
         else{
             echo "Existen pasajeros que poseen vuelos para la fecha indicada";
