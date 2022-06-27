@@ -30,7 +30,7 @@ $vuelos_aceptados = $result2 -> fetchAll(PDO::FETCH_ASSOC);
 
 #query para ver los vuelos rechazados de dicha compañia
 $query_rechazados = "
-SELECT codigo, compania_codigo, aeronave_codigo, fecha_salida, fecha_llegada
+SELECT codigo, compania_codigo, aeronave_codigo, fecha_salida, fecha_llegada, aerodromo_salida_id, aerodromo_llegada_id
 FROM vuelo
 WHERE estado = 'rechazado' AND
 compania_codigo = :codigo_compania_aerea;
@@ -40,12 +40,12 @@ $result3 -> bindParam("codigo_compania_aerea", $codigo_compania_aerea);
 $result3 -> execute();
 $vuelos_rechazados = $result3 -> fetchAll(PDO::FETCH_ASSOC);
 ?>
-<?php	mostrar_mapa($vuelos_aceptados); ?>
     <h1>Vista de Compañia Aérea</h1>
 <?php echo "<h2> Bienvenido $nombre_compania_aerea </h2>"; ?>
     <br>
     <hr>
-    <h3> Su lista de vuelos aceptados es la siguiente</h3>
+    <h3> Su lista de vuelos aceptados es la siguiente:</h3>
+<?php	mostrar_mapa($vuelos_aceptados); ?>
 <?php
         echo '<table class="table table-striped table-hover">';
         echo '<tbody>';
@@ -60,7 +60,8 @@ $vuelos_rechazados = $result3 -> fetchAll(PDO::FETCH_ASSOC);
 ?>
     <br>
     <hr>
-    <h3> Su lista de vuelos rechazados es la siguiente</h3>
+    <h3> Su lista de vuelos rechazados es la siguiente:</h3>
+<?php	mostrar_mapa($vuelos_rechazados); ?>
 <?php   
 	echo '<table class="table table-striped table-hover">';
         echo '<tbody>';

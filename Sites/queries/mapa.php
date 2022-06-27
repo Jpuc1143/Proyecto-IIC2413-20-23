@@ -1,6 +1,7 @@
 <?php
 function mostrar_mapa($vuelos) {
 	require("./queries/connection.php");
+	STATIC $loaded = 0;
 	$api_key = file_get_contents("./.google.key");
 
 	$query_aeropuertos = "SELECT id, latitud, longitud FROM aerodromo";
@@ -16,14 +17,30 @@ function mostrar_mapa($vuelos) {
 	$aeropuertos_json = json_encode($aeropuertos);
 	$vuelos_json = json_encode($vuelos);
 
-	$html = <<<TEXT
-<div class="ratio ratio-21x9" id="map"></div>
-<script async src="https://maps.googleapis.com/maps/api/js?key=$api_key&callback=initMap"></script>
+	if ($loaded == 0) {
+		echo '<script async src="https://maps.googleapis.com/maps/api/js?key='.$api_key.'&callback=initMap"></script>';
+		echo <<<TEXT
 <script>
-let map;
-
+let maps = [];
 function initMap() {
-	map = new google.maps.Map(document.getElementById("map"), {
+	console.log(maps);
+	for (let i = 0; i<maps.length; i++) {
+		console.log(maps[i]);
+		(maps[i])();
+	}
+window.initMap = initMap;
+}
+</script>
+TEXT;
+	}
+	$loaded += 1;
+	$html = <<<TEXT
+<div class="ratio ratio-21x9" id="map$loaded"></div>
+<script>
+let map$loaded;
+
+function drawMap$loaded() {
+	map$loaded = new google.maps.Map(document.getElementById("map$loaded"), {
 		center: { lat: 0, lng: 0 },
     		zoom: 3,
 	});
@@ -32,7 +49,7 @@ function initMap() {
 	console.log(aeropuertos);
 	for (let key in aeropuertos ) {
 		coord = {lat: parseFloat(aeropuertos[key]["latitud"]), lng: parseFloat(aeropuertos[key]["longitud"])}
-		new google.maps.Marker({position: coord, map: map});
+		new google.maps.Marker({position: coord, map: map$loaded});
 	}
 
 	let vuelos = $vuelos_json;
@@ -45,15 +62,15 @@ function initMap() {
 		console.log([startCoord, endCoord]);
 		new google.maps.Polyline({
 			path: [startCoord, endCoord],
-			geodisc: true,
+			geodesic: true,
 			strokeColor: "#FF0000",
 		    	strokeOpacity: 1.00,
     			strokeWeight: 2,
-			map: map
+			map: map$loaded
 		});
 	}
 }
-	window.initMap = initMap;
+maps.push(drawMap$loaded);
 </script>
 TEXT;
 
