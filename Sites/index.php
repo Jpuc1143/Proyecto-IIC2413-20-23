@@ -33,20 +33,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	<input type="submit" value="Empezar">
 </form>
 
-<style>
-body {
-  background-color: lightblue;
-}
-
-h1 {
-  color: black;
-  text-align: center;
-}
-
-p {
-  font-family: verdana;
-  font-size: 15px;
-}
-</style>
-
 <?php include("footer.html") ?>
