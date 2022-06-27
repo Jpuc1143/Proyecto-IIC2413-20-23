@@ -4,17 +4,17 @@
 <?php
 require("./config/databaseconnect.php");
 
-$username = 'Zachary Davenport';
-$id = 23679;
+$username = 'Zachary Davenport'; #$_SESSION['usuario_nombre']
+$id = 23679; #se borra
 
 #Muestra datos usuario
 $query = "SELECT pasaporte, nombre
         FROM persona
-        WHERE nombre = :username
+        WHERE nombre = :username #pasaporte = :username
         AND id = :id;";
 $result = $db2 -> prepare($query);
 $result -> bindParam(":username", $username);
-$result -> bindParam(":id", $id);
+$result -> bindParam(":id", $id); #se borra
 $result -> execute();
 $data = $result -> fetchAll();
 

@@ -96,11 +96,7 @@ else{
         $data7 = $result7 -> fetchAll();
         
         if(!$data5 && !$data6 && !$data7 ){
-            $query8 = "SELECT insertar_reserva()
-            ;";
-            $result8 = $db2 -> prepare($query8);
-            $result8 -> execute();
-            $data8 = $result8 -> fetchAll();
+            #actualizar base con procedimiento almacenado
         }
         else{
             echo "Existen pasajeros que poseen vuelos para la fecha indicada";
