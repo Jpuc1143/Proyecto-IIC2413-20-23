@@ -1,40 +1,40 @@
 id,ciudad_id,nombre,icao,iata,latitud,longitud
-45,43,Aeropuerto de Ámsterdam-Schiphol,RCQR,OHI,37.1,60.9
-61,53,Aeropuerto Internacional Eleftherios Venizelos,UQQX,TQV,72.4,102.6
-31,50,Aeropuerto Josep Tarradellas Barcelona-El Prat,MVPW,JIZ,52.7,165.2
-33,44,Aeropuerto Internacional de Pekín,NBMQ,JTM,133.5,57.9
-3,59,Aeropuerto Internacional de Ezeiza,BVWK,BAH,14.7,51.2
-47,64,Aeropuerto Internacional de Cancún,SDSC,PKS,103.3,99.4
-65,60,Aeropuerto Internacional de Maiquetía Simón Bolívar,VBIT,UYL,144,165.7
-9,56,Aeropuerto Internacional O'Hare,FCJT,BYB,166.5,51
-51,62,Aeropuerto Internacional de la Ciudad del Cabo,SIMJ,RFP,47.4,157.1
-27,40,Aeropuerto Internacional de El Cairo,KZZS,HRV,103.8,107.6
-69,48,Aeropuerto Internacional Ataturk,XOEY,VNN,104,154.4
-59,47,Aeropuerto de Hong Kong,TQQZ,TEF,142.6,4.1
-67,72,Aeropuerto de Ibiza,XEWM,VBH,156.8,54.8
-49,61,Aeropuerto Internacional El Alto,SGWN,QJM,173.5,5.6
-53,58,Aeropuerto Internacional Jorge Chávez,TAZY,RRK,62.2,148.1
-17,51,Aeropuerto de la Ciudad de Londres,GSPA,EPM,152.5,76.9
-29,55,Aeropuerto de Adolfo Suárez Madrid-Barajas,MBOO,HSJ,54.2,174.5
-23,66,Aeropuerto Internacional de Melbourne,JKRA,HNB,19.5,53.9
-13,73,Aeropuerto Internacional de Miami,GAWW,CPH,96.1,8.4
-57,41,Aeropuerto de Milán-Malpensa,TCGF,SPT,70.1,56.3
-43,71,Aeropuerto Internacional de Carrasco,PYIM,NVI,66.4,148
-63,67,Aeropuerto Internacional Indira Gandhi,URLQ,UAU,149.9,125.7
-11,69,Aeropuerto Internacional John F. Kennedy,FOLH,CKR,18.1,123.4
-71,69,Aeropuerto Internacional de Nueva York,XSAM,WHO,89.8,171.2
-75,69,Aeropuerto Big Apple,YHEP,YGY,43,118.1
-19,46,Aeropuerto de París-Charles de Gaulle,HGZT,HCM,147.2,49.6
-7,49,Aeropuerto Internacional de Galeão,EEGZ,BXS,6.8,90.3
-55,63,Aeropuerto de Roma-Fiumicino,TBJM,SFF,157.2,26.7
-15,65,Aeropuerto Internacional de San Francisco,GPRK,DUU,45.1,142.8
-1,42,Aeropuerto Internacional Arturo Merino Benítez,BLFS,AWR,75.4,106.5
-73,42,Aeropuerto Internacional de Copiapo,XSZW,WKT,92.2,129.6
-5,45,Aeropuerto Internacional de São Paulo-Guarulhos,DZFP,BKT,17.9,177.8
-41,70,Aeropuerto Internacional de Icheon,PVOW,LMF,159.1,71.9
-35,54,Aeropuerto Internacional Pudong,NZTG,KFE,153.9,115.7
-77,52,Aeropuerto Internacional de Australia,ZGUA,ZLQ,27.3,111.1
-25,52,Aeropuerto Internacional Kingsford Smith,KMPW,HOX,22.5,59.4
-37,74,Aeropuerto Internacional Ben Gurión,NZTP,KZN,159.3,167.2
-39,57,Aeropuerto Internacional de Haneda,PFXE,LCX,153.8,40.2
-21,68,Aeropuerto Internacional Toronto Pearson,IWJC,HKA,40.2,41.8
+45,43,Aeropuerto de Ámsterdam-Schiphol,EHAM,OHI,52.308056,4.764167
+61,53,Aeropuerto Internacional Eleftherios Venizelos,LGAV,TQV,37.9364,23.9445
+31,50,Aeropuerto Josep Tarradellas Barcelona-El Prat,LEBL,JIZ,41.301384,2.091074
+33,44,Aeropuerto Internacional de Pekín,ZBAA,JTM,40.0801,116.585
+3,59,Aeropuerto Internacional de Ezeiza,SAEZ,BAH,-34.822,-58.536
+47,64,Aeropuerto Internacional de Cancún,MMUN,PKS,21.0365,-86.8771
+65,60,Aeropuerto Internacional de Maiquetía Simón Bolívar,SVMI,UYL,10.6031,-66.9906
+9,56,Aeropuerto Internacional O'Hare,KORD,BYB,41.9786,-87.9048
+51,62,Aeropuerto Internacional de la Ciudad del Cabo,FACT,RFP,-33.97139,18.604166
+27,40,Aeropuerto Internacional de El Cairo,HECA,HRV,30.1219,31.4056
+69,48,Aeropuerto Internacional Ataturk,LTBA,VNN,40.97222,28.823889
+59,47,Aeropuerto de Hong Kong,VHHH,TEF,22.3089,113.915
+67,72,Aeropuerto de Ibiza,LEIB,VBH,38.874084,1.3744333
+49,61,Aeropuerto Internacional El Alto,SLLP,QJM,-16.513,-68.183
+53,58,Aeropuerto Internacional Jorge Chávez,SPJC,RRK,-12.021667,-77.11444
+17,51,Aeropuerto de la Ciudad de Londres,CYXU,EPM,43.033,-81.151
+29,55,Aeropuerto de Adolfo Suárez Madrid-Barajas,LEMD,HSJ,40.47222,-3.5608332
+23,66,Aeropuerto Internacional de Melbourne,YMML,HNB,-37.669724,144.83806
+13,73,Aeropuerto Internacional de Miami,KMIA,CPH,25.7932,-80.2906
+57,41,Aeropuerto de Milán-Malpensa,LIMC,SPT,45.63,8.723
+43,71,Aeropuerto Internacional de Carrasco,SUMU,NVI,-34.8338,-56.028
+63,67,Aeropuerto Internacional Indira Gandhi,VIDP,UAU,28.5665,77.1031
+11,69,Aeropuerto Internacional John F. Kennedy,KJFK,CKR,40.6398,-73.7789
+71,69,Aeropuerto Internacional de Nueva York,KEWR,WHO,40.6925,-74.1687
+75,69,Aeropuerto Big Apple,KLGA,YGY,40.7772,-73.8726
+19,46,Aeropuerto de París-Charles de Gaulle,LFPG,HCM,49.00973,2.54778
+7,49,Aeropuerto Internacional de Galeão,SBGL,BXS,-22.81,-43.251
+55,63,Aeropuerto de Roma-Fiumicino,LIRF,SFF,41.8,12.239
+15,65,Aeropuerto Internacional de San Francisco,KSFO,DUU,37.619,-122.375
+1,42,Aeropuerto Internacional Arturo Merino Benítez,SCEL,AWR,-33.3941,-70.7935
+73,42,Aeropuerto Internacional de Copiapo,SCAT,WKT,-27.2616,-70.7791
+5,45,Aeropuerto Internacional de São Paulo-Guarulhos,SBGR,BKT,-23.429445,-46.46583
+41,70,Aeropuerto Internacional de Icheon,RKSI,LMF,37.4625,126.43916
+35,54,Aeropuerto Internacional Pudong,ZSPD,KFE,31.1434,121.805
+77,52,Aeropuerto Internacional de Australia,YSBK,ZLQ,-33.923332,150.99028
+25,52,Aeropuerto Internacional Kingsford Smith,YSSY,HOX,-33.946667,151.17612
+37,74,Aeropuerto Internacional Ben Gurión,LLBG,KZN,32.0114,34.8867
+39,57,Aeropuerto Internacional de Haneda,RJTT,LCX,35.5523,139.78
+21,68,Aeropuerto Internacional Toronto Pearson,CYYZ,HKA,43.677,-79.631
