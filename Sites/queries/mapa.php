@@ -1,5 +1,5 @@
 <?php
-function mostrar_mapa($vuelos) {
+function mostrarMapa($vuelos) {
 	require("./queries/connection.php");
 	STATIC $loaded = 0;
 	$api_key = file_get_contents("./.google.key");

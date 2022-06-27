@@ -15,7 +15,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 ?>
-<?php require("header.php") ?>
+<?php
+require("header.php");
+require("queries/connection.php");
+require("./queries/mapa.php");
+
+$result = $db_impar -> prepare("SELECT aerodromo_salida_id, aerodromo_llegada_id FROM vuelo");
+$result -> execute();
+$vuelos = $result -> fetchAll(PDO::FETCH_ASSOC);
+
+mostrarMapa($vuelos);
+?>
 <center><h2>Ingrese su nombre de usuario y contraseña</h2></center>
 <br>
 <form class="form-signin" role="form" method="post">

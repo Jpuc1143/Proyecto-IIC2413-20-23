@@ -47,7 +47,7 @@ $header = array("Código Vuelo", "Código Compañía Aérea", "Código Aeronave"
     <h2> Bienvenido <?php echo "$nombre_compania_aerea" ?> </h2>
     <hr>
     <h3> Su lista de vuelos aceptados es la siguiente:</h3>
-<?php	mostrar_mapa($vuelos_aceptados); ?>
+<?php	mostrarMapa($vuelos_aceptados); ?>
 <?php
         echo '<table class="table table-striped table-hover">';
         echo '<tbody>';
@@ -70,7 +70,7 @@ $header = array("Código Vuelo", "Código Compañía Aérea", "Código Aeronave"
     <br>
     <hr>
     <h3> Su lista de vuelos rechazados es la siguiente:</h3>
-<?php	mostrar_mapa($vuelos_rechazados); ?>
+<?php	mostrarMapa($vuelos_rechazados); ?>
 <?php   
 	echo '<table class="table table-striped table-hover">';
     echo '<tbody>';
