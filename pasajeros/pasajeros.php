@@ -2,9 +2,40 @@
 <html>
 <body>
 <?php
-require("./queries/consulta_1.php");
-require("./queries/consulta_2.php");
-require("./queries/consulta_3.php");
+require("./config/databaseconnect.php");
+
+$username = 'Zachary Davenport';
+$id = 23679;
+
+#Muestra datos usuario
+$query = "SELECT pasaporte, nombre
+        FROM persona
+        WHERE nombre = :username
+        AND id = :id;";
+$result = $db2 -> prepare($query);
+$result -> bindParam(":username", $username);
+$result -> bindParam(":id", $id);
+$result -> execute();
+$data = $result -> fetchAll();
+
+
+#Muestra ciudades disponibles para vuelos
+$query2 = "SELECT ciudad_id, nombre_ciudad
+        FROM ciudad
+        ORDER BY nombre_ciudad ;";
+$result2 = $db -> prepare($query2);
+$result2 -> execute();
+$data2 = $result2 -> fetchAll();
+
+
+#Muestra reservas del usuario
+$query3 = "SELECT codigo 
+        FROM reserva 
+        WHERE cliente_id = :id;";
+$result3 = $db2 -> prepare($query3);
+$result3 -> bindParam(":id", $id);
+$result3 -> execute();
+$data3 = $result3 -> fetchAll();
 
 ?>
 
