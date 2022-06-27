@@ -23,6 +23,8 @@
 
 
 ## Corección funcionalidad adicional implementada
+* Se implementó un mapa que muestra todos los vuelos pertinentes asociados a un usuario. 
+De esta forma se muestras líneas que unen los puntos de salida y de llegada de cada vuelo.
 
 ## Corrección de los requerimientos no intuitivos de esta entrega
 
@@ -32,6 +34,7 @@
 * Las contraseñas de los pasajeros están compuestas de la siguiente forma; los primeros 3 carácteres son las primeras 3 letras de su nombre, luego los 3 siguientes carácteres están compuestos por los 3 primeros carácteres de su pasaporte y los últimos 2 carácteres son al azar.
 
 ## Registro del personal administrativo como usuarios
+* En el inicio de la aplicación web, se muestra la opción de logearse y justo abajo de dicha opción, está la opción de importar usuarios. Una vez apretado el botón de importar usuarios ya se habrá realizado dicha operación.
 
 ## Información adicional
 * Se cambiaron los datos de la base de datos de todos los aeropuetos con datos reales para poder hacer la funcionalidad extra de mostrar todos los viajes en un mapa.
