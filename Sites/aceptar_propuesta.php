@@ -13,8 +13,11 @@ $query = "SELECT aceptar_vuelo(:codigo);";
     $data = $result -> fetchAll();
 ?>
 
-<body>
 
-    <h1>Se ha actualizado el estado</h1>
-
-</body>
+<?php 
+    	session_start();
+    	$_SESSION['msg'] = "La propuesta de vuelo $codigo ha sido aceptada.";
+	$_SESSION['msg_class'] = "info";
+    	header("Location: ./perfil.php");
+	exit();
+?>

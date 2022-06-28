@@ -8,9 +8,6 @@ $query = "SELECT *
     $result -> execute();
     $data = $result -> fetchAll();
 ?>
-
-<body>
-
     <h1>Vista de Admin</h1>
     <form align="center" action="admin_consulta.php" method="post">
     Fecha Inicio:
@@ -63,5 +60,3 @@ $query = "SELECT *
         <?php endforeach ?>
 
     </table>
-</body>
-

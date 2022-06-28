@@ -19,7 +19,12 @@
 	<main class="mx-5 pt-5 mt-5">
 <?php 
 	if (isset($_SESSION["msg"])) {
-		echo '<div class="alert alert-danger">'.$_SESSION['msg']."</div>";
+		if (isset($_SESSION["msg_class"])) {
+			$msg_class = "alert-".$_SESSION["msg_class"];
+		} else {
+			$msg_class = "";
+		}
+		echo '<div class="alert '.$msg_class.'">'.$_SESSION['msg']."</div>";
 		unset($_SESSION["msg"]);
 	}
 ?>
