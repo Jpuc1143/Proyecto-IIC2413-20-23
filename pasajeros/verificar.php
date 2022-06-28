@@ -25,7 +25,7 @@ if ($p1 == "Código de Pasaporte" && $p2 == "Código de Pasaporte" && $p3 == "C�
 else{
     $query = "SELECT pasaporte
         FROM persona
-        WHERE pasaporte = $p1
+        WHERE pasaporte = '$p1'
         ;";
     $result = $db2 -> prepare($query);
     $result -> execute();
@@ -33,7 +33,7 @@ else{
 
     $query2 = "SELECT pasaporte
         FROM persona
-        WHERE pasaporte = $p2
+        WHERE pasaporte = '$p2'
         ;";
     $result2 = $db2 -> prepare($query2);
     $result2 -> execute();
@@ -41,13 +41,20 @@ else{
 
     $query3 = "SELECT pasaporte
             FROM persona
-            WHERE pasaporte = $p3
+            WHERE pasaporte = '$p3'
             ;";
     $result3 = $db2 -> prepare($query3);
     $result3 -> execute();
     $data3 = $result3 -> fetchAll();
-    if (!$data || !$data2 ||!$data3){
-        echo "Se ingresaron pasaportes no válidos";
+    
+    if (!$data && $p1 =! 'Código de Pasaporte'){
+        echo "El pasaporte $p1 no es válido";
+    }
+    if (!$data2 && $p2 =! 'Código de Pasaporte'){
+        echo "El pasaporte $p2 no es válido";
+    }
+    if (!$data3 && $p3 =! 'Código de Pasaporte'){
+        echo "El pasaporte $p3 no es válido";
     }
     else{
         $query5 = "SELECT ticket.reserva_id
