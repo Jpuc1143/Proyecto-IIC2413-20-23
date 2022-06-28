@@ -5,7 +5,7 @@ $inicial = $_POST["f_init"];
 $final = $_POST["f_fin"];
 $query = "SELECT *
           FROM propuestas, vuelo 
-          WHERE propuestas.vuelo_id = vuelo.vuelo_id AND vuelo.estado = 'pendiente' AND propuestas.fecha_envio BETWEEN '$inicial' AND '$final';";
+          WHERE propuestas.vuelo_id = vuelo.vuelo_id AND vuelo.estado = 'pendiente' AND (propuestas.fecha_envio BETWEEN '$inicial' AND '$final' OR vuelo.fecha_salida BETWEEN '$inicial' AND '$final' OR vuelo.fecha_llegada BETWEEN '$inicial' AND '$final');";
     $result = $db -> prepare($query);
     $result -> execute();
     $data = $result -> fetchAll();
