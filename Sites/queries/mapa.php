@@ -1,11 +1,19 @@
 <?php
-function mostrarMapa($vuelos) {
+function mostrarMapa($vuelos, $impar = true) {
 	require("./queries/connection.php");
+	require("./config/databaseconnect.php");
+
 	STATIC $loaded = 0;
 	$api_key = file_get_contents("./.google.key");
+	
+	if ($impar) {
+		$query_aeropuertos = "SELECT id, latitud, longitud FROM aerodromo";
+		$result = $db_impar -> prepare($query_aeropuertos);
+	} else {
+		$query_aeropuertos = "SELECT aerodromo_id as id, latitud, longitud FROM aerodromos JOIN coordenada ON aerodromos.coordenada_id = coordenada.coordenada_id";
+		$result = $db -> prepare($query_aeropuertos);
+	}
 
-	$query_aeropuertos = "SELECT id, latitud, longitud FROM aerodromo";
-	$result = $db_impar -> prepare($query_aeropuertos);
 	$result -> execute();
 	$aeropuertos_result = $result -> fetchAll(PDO::FETCH_ASSOC);
 
@@ -23,9 +31,7 @@ function mostrarMapa($vuelos) {
 <script>
 let maps = [];
 function initMap() {
-	console.log(maps);
 	for (let i = 0; i<maps.length; i++) {
-		console.log(maps[i]);
 		(maps[i])();
 	}
 window.initMap = initMap;
@@ -42,24 +48,21 @@ let map$loaded;
 function drawMap$loaded() {
 	map$loaded = new google.maps.Map(document.getElementById("map$loaded"), {
 		center: { lat: 0, lng: 0 },
-    		zoom: 3,
+    		zoom: 2,
 	});
 
 	let aeropuertos = $aeropuertos_json;
-	console.log(aeropuertos);
 	for (let key in aeropuertos ) {
 		coord = {lat: parseFloat(aeropuertos[key]["latitud"]), lng: parseFloat(aeropuertos[key]["longitud"])}
 		new google.maps.Marker({position: coord, map: map$loaded});
 	}
 
 	let vuelos = $vuelos_json;
-	console.log(vuelos);
 	for (let i = 0; i<vuelos.length; i++) {
 		startCoord = {lat: parseFloat(aeropuertos[vuelos[i]["aerodromo_salida_id"]]["latitud"]), 
 			lng: parseFloat(aeropuertos[vuelos[i]["aerodromo_salida_id"]]["longitud"])};
 		endCoord = {lat: parseFloat(aeropuertos[vuelos[i]["aerodromo_llegada_id"]]["latitud"]), 
 			lng: parseFloat(aeropuertos[vuelos[i]["aerodromo_llegada_id"]]["longitud"])};
-		console.log([startCoord, endCoord]);
 		new google.maps.Polyline({
 			path: [startCoord, endCoord],
 			geodesic: true,

@@ -1,7 +1,7 @@
 <?php
 require("./config/databaseconnect.php");
 require("queries/mapa.php");
-$query = "SELECT *
+$query = "SELECT *, aerodromo_salida as aerodromo_salida_id, aerodromo_llegada as aerodromo_llegada_id
           FROM propuestas, vuelo
           WHERE propuestas.vuelo_id = vuelo.vuelo_id AND vuelo.estado = 'pendiente';";
     $result = $db -> prepare($query);
@@ -60,3 +60,4 @@ $query = "SELECT *
         <?php endforeach ?>
 
     </table>
+<?php mostrarMapa($data, false); ?>
