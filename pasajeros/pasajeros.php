@@ -10,7 +10,7 @@ $id = 23679; #se borra
 #Muestra datos usuario
 $query = "SELECT pasaporte, nombre
         FROM persona
-        WHERE nombre = :username #pasaporte = :username
+        WHERE nombre = :username 
         AND id = :id;";
 $result = $db2 -> prepare($query);
 $result -> bindParam(":username", $username);
