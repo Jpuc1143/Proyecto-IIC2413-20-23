@@ -3,7 +3,7 @@ CREATE OR REPLACE FUNCTION rechazar (
 ) RETURNS void AS $$
 BEGIN
     UPDATE vuelo
-    SET vuelo.estado = 'rechazado'
+    SET estado = 'rechazado'
     WHERE vuelo.codigo = cod;
 END;
 $$ language plpgsql

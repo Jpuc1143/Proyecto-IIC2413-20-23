@@ -1,5 +1,6 @@
 <?php
 require("./config/databaseconnect.php");
+require("queries/mapa.php");
 
 $inicial = $_POST["f_init"];
 $final = $_POST["f_fin"];

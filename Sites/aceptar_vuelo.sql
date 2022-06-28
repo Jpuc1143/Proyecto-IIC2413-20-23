@@ -3,7 +3,7 @@ CREATE OR REPLACE FUNCTION aceptar_vuelo (
 ) RETURNS void AS $$
 BEGIN
     UPDATE vuelo
-    SET vuelo.estado = 'aceptado'
+    SET estado = 'aceptado'
     WHERE vuelo.codigo = cod;
 END;
 $$ language plpgsql

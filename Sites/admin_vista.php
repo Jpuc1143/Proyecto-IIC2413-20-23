@@ -1,5 +1,6 @@
 <?php
 require("./config/databaseconnect.php");
+require("queries/mapa.php");
 $query = "SELECT *
           FROM propuestas, vuelo
           WHERE propuestas.vuelo_id = vuelo.vuelo_id AND vuelo.estado = 'pendiente';";
@@ -62,6 +63,5 @@ $query = "SELECT *
         <?php endforeach ?>
 
     </table>
-
 </body>
 
