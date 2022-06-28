@@ -26,5 +26,6 @@
 		}
 		echo '<div class="alert '.$msg_class.'">'.$_SESSION['msg']."</div>";
 		unset($_SESSION["msg"]);
+		unset($_SESSION["msg_class"]);
 	}
 ?>

@@ -16,7 +16,7 @@ $query = "SELECT aceptar_vuelo(:codigo);";
 
 <?php 
     	session_start();
-    	$_SESSION['msg'] = "La propuesta de vuelo $codigo ha sido aceptada.";
+    	$_SESSION['msg'] = "La propuesta de vuelo <strong>$codigo</strong> ha sido aceptada.";
 	$_SESSION['msg_class'] = "info";
     	header("Location: ./perfil.php");
 	exit();

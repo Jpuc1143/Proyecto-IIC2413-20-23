@@ -8,6 +8,8 @@ if (isset($_SESSION['usuario_id'])) {
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	if (isset($_POST["importar"]) && $_POST["importar"] === "1") {
+		$_SESSION["msg"] = "Ha importado los usuarios exitosamente";
+		$_SESSION["msg_class"] = "success";
 		require("./queries/importar.php");
 	} else {
 		require("./queries/login.php");
