@@ -1,0 +1,245 @@
+fpl_id,ruta_id,velocidad,altitud,tipo,max_pasajeros,realizado,licencia_id_piloto,licencia_id_copiloto,vuelo_id
+136,191.0,225.78,12478.26,comercial,56.0,realizado,25,,0
+207,214.0,222.52,10218.64,comercial,534.0,realizado,31,,3
+206,257.0,547.23,12080.67,privado,20.0,no realizado,48,2,5
+160,43.0,249.21,10764.1,comercial,356.0,realizado,39,24,6
+145,72.0,251.16,10425.81,comercial,70.0,realizado,50,,7
+123,75.0,231.87,11667.06,comercial,82.0,realizado,52,0,10
+171,177.0,232.13,12957.77,comercial,209.0,no realizado,15,,13
+230,315.0,270.95,15934.51,militar,255.0,no realizado,52,,17
+183,49.0,518.0,11605.86,privado,20.0,no realizado,15,,18
+111,242.0,279.85,12260.46,comercial,534.0,realizado,25,0,23
+197,94.0,250.6,12028.69,comercial,209.0,realizado,24,,24
+110,64.0,230.96,10137.99,comercial,534.0,realizado,25,,25
+194,153.0,231.06,11493.06,comercial,66.0,realizado,24,8,26
+90,79.0,234.89,11517.73,comercial,41.0,realizado,48,,27
+153,111.0,239.99,12740.55,comercial,56.0,realizado,25,48,29
+154,221.0,262.91,11009.93,comercial,534.0,no realizado,48,,30
+141,100.0,279.52,11261.99,comercial,356.0,realizado,24,50,31
+182,208.0,232.04,11673.1,comercial,89.0,realizado,24,,32
+163,135.0,558.7,12754.15,privado,55.0,realizado,53,,33
+186,86.0,235.3,10118.19,comercial,564.0,realizado,48,,34
+7,90.0,230.14,12331.98,comercial,66.0,realizado,15,36,35
+1,314.0,328.99,16946.16,militar,255.0,no realizado,52,,36
+58,4.0,226.76,10193.87,comercial,72.0,no realizado,31,,37
+210,204.0,261.94,16279.4,militar,89.0,no realizado,52,,38
+180,115.0,248.49,12148.15,comercial,209.0,realizado,28,24,39
+42,40.0,258.23,12495.79,comercial,70.0,no realizado,25,,2
+224,143.0,232.38,10529.93,comercial,209.0,realizado,36,,41
+166,100.0,259.08,12854.57,comercial,534.0,realizado,8,15,42
+196,95.0,270.25,10213.93,comercial,55.0,realizado,50,8,44
+52,132.0,246.87,10048.18,comercial,55.0,realizado,2,28,47
+238,122.0,256.85,11534.8,comercial,564.0,realizado,51,,49
+36,66.0,249.1,12213.73,comercial,66.0,realizado,25,48,50
+83,71.0,276.33,12379.03,comercial,70.0,realizado,51,7,19
+201,237.0,260.73,11084.34,comercial,348.0,realizado,33,2,53
+6,123.0,270.37,10365.98,comercial,552.0,realizado,36,,54
+41,235.0,251.35,10028.88,comercial,76.0,realizado,7,36,55
+17,3.0,250.07,11236.14,comercial,76.0,no realizado,2,48,56
+101,125.0,244.9,10233.88,comercial,534.0,realizado,51,0,57
+115,300.0,508.21,12185.64,privado,10.0,realizado,51,,59
+106,218.0,277.25,10612.57,comercial,66.0,no realizado,10,,60
+29,233.0,236.71,11560.45,comercial,44.0,no realizado,36,,51
+212,220.0,232.13,10956.44,comercial,504.0,no realizado,48,,61
+25,223.0,589.64,10556.06,privado,55.0,realizado,2,,63
+202,123.0,269.76,10983.23,comercial,62.0,realizado,2,,46
+94,275.0,435.46,11615.62,privado,20.0,no realizado,15,39,65
+96,103.0,230.88,10140.91,comercial,504.0,realizado,51,7,66
+147,88.0,273.49,10038.6,comercial,504.0,realizado,50,,16
+164,8.0,270.15,10238.26,comercial,348.0,no realizado,24,39,70
+80,159.0,482.72,12252.12,privado,20.0,realizado,2,,71
+188,118.0,257.99,10346.71,comercial,72.0,realizado,48,50,73
+66,243.0,274.55,12140.98,comercial,43.0,realizado,28,,75
+128,163.0,240.96,12722.86,comercial,43.0,realizado,15,25,77
+105,141.0,274.88,15856.53,militar,11.0,realizado,52,,78
+73,137.0,239.31,10852.03,comercial,356.0,realizado,38,10,79
+44,213.0,248.08,12273.77,comercial,56.0,realizado,48,51,80
+151,26.0,259.7,11886.07,comercial,89.0,no realizado,48,,83
+155,133.0,274.17,10180.26,comercial,55.0,realizado,48,,64
+226,228.0,252.64,11725.1,comercial,56.0,no realizado,36,,84
+20,16.0,227.65,11816.4,comercial,43.0,no realizado,8,,86
+211,27.0,259.13,11399.25,comercial,82.0,no realizado,25,,89
+69,122.0,229.53,11731.3,comercial,70.0,realizado,28,15,40
+124,88.0,264.17,10330.16,comercial,23.0,realizado,0,,92
+38,161.0,238.93,12280.59,comercial,82.0,realizado,48,,94
+76,36.0,229.82,12359.32,comercial,504.0,no realizado,10,,98
+173,23.0,254.34,10001.41,comercial,82.0,realizado,10,,100
+122,306.0,552.02,10265.38,privado,20.0,realizado,39,53,101
+190,47.0,232.2,12589.07,comercial,89.0,no realizado,8,,81
+5,268.0,222.31,10426.22,comercial,357.0,realizado,50,36,102
+79,181.0,250.46,10676.28,comercial,82.0,realizado,23,8,88
+77,99.0,477.56,10381.64,privado,21.0,realizado,39,,104
+45,270.0,230.18,11647.94,comercial,357.0,realizado,25,,106
+102,141.0,237.9,11640.43,comercial,55.0,realizado,48,,107
+46,161.0,279.93,11583.45,comercial,552.0,no realizado,28,,69
+54,263.0,253.79,11344.54,comercial,357.0,realizado,31,48,108
+125,313.0,534.41,11064.49,privado,23.0,realizado,2,15,109
+97,284.0,440.49,12747.52,privado,20.0,no realizado,53,52,111
+100,48.0,245.36,11999.41,comercial,56.0,no realizado,7,,43
+227,162.0,276.21,11855.8,comercial,66.0,realizado,8,,114
+89,71.0,276.33,12379.03,comercial,70.0,realizado,7,36,115
+220,41.0,274.82,12874.06,comercial,41.0,no realizado,38,,118
+64,74.0,274.07,12089.87,comercial,534.0,realizado,50,,112
+214,226.0,229.69,12577.68,comercial,43.0,no realizado,33,31,119
+195,80.0,239.21,12262.4,comercial,72.0,realizado,24,,123
+175,108.0,267.89,12264.46,comercial,89.0,realizado,2,,90
+152,21.0,234.04,11398.88,comercial,55.0,no realizado,25,,125
+241,209.0,269.63,10553.6,comercial,357.0,realizado,36,,105
+88,71.0,276.33,12379.03,comercial,70.0,realizado,51,,128
+223,171.0,222.64,10911.26,comercial,43.0,realizado,36,8,129
+170,281.0,564.57,10356.95,privado,49.0,no realizado,48,53,130
+199,46.0,267.37,10976.59,comercial,357.0,realizado,33,48,131
+53,173.0,263.1,12355.4,comercial,76.0,realizado,48,,132
+185,261.0,279.67,11417.85,comercial,357.0,realizado,24,8,134
+221,143.0,232.38,10529.93,comercial,209.0,realizado,36,15,135
+132,201.0,242.94,10376.47,comercial,74.0,realizado,39,15,137
+13,308.0,425.01,10366.67,privado,23.0,realizado,2,51,138
+61,277.0,536.53,11478.22,privado,21.0,no realizado,36,48,139
+193,148.0,241.5,10984.45,comercial,72.0,realizado,50,,140
+138,324.0,275.83,16206.22,militar,255.0,realizado,31,,141
+55,249.0,222.92,10173.84,comercial,76.0,realizado,31,,67
+181,320.0,278.74,15239.36,militar,11.0,no realizado,52,,143
+169,105.0,229.02,11770.54,comercial,504.0,realizado,10,,145
+177,6.0,274.55,11093.9,comercial,62.0,no realizado,25,,146
+165,128.0,276.48,11008.93,comercial,348.0,realizado,39,,147
+161,1.0,223.69,11831.11,comercial,72.0,no realizado,15,,148
+134,11.0,260.94,10096.66,comercial,74.0,no realizado,39,,150
+15,89.0,244.43,11427.16,comercial,324.0,realizado,7,8,133
+56,179.0,242.02,11916.36,comercial,534.0,realizado,31,39,103
+12,151.0,271.41,12956.61,comercial,324.0,realizado,8,,120
+156,35.0,257.43,12587.34,comercial,56.0,no realizado,15,,52
+49,106.0,258.51,11547.77,comercial,534.0,realizado,25,51,91
+60,78.0,228.19,12996.0,comercial,564.0,realizado,15,,152
+135,211.0,271.45,10550.24,comercial,43.0,realizado,24,50,97
+63,22.0,270.31,10190.23,comercial,357.0,realizado,10,38,154
+65,186.0,261.48,12708.15,comercial,357.0,realizado,15,28,14
+86,71.0,276.33,12379.03,comercial,70.0,realizado,0,36,157
+229,237.0,489.35,12725.88,privado,20.0,realizado,36,48,158
+81,215.0,274.56,11799.59,comercial,356.0,no realizado,0,,160
+78,22.0,262.47,11206.79,comercial,357.0,realizado,10,,144
+127,321.0,289.8,15367.09,militar,255.0,realizado,52,31,162
+16,295.0,578.89,12307.93,privado,10.0,realizado,48,,163
+159,239.0,272.72,12946.99,comercial,552.0,realizado,15,,164
+103,142.0,252.59,11903.64,comercial,44.0,realizado,48,51,165
+130,153.0,227.1,11030.85,comercial,55.0,realizado,0,25,166
+35,119.0,283.45,16402.68,militar,89.0,no realizado,53,,167
+40,166.0,227.81,10472.11,comercial,66.0,realizado,7,,168
+34,102.0,227.96,11926.58,comercial,534.0,realizado,33,,169
+233,327.0,346.98,16704.81,militar,255.0,realizado,53,52,171
+68,229.0,222.26,11149.46,comercial,82.0,no realizado,15,,173
+148,62.0,222.08,11273.91,comercial,504.0,realizado,48,25,174
+11,152.0,222.35,10847.41,comercial,41.0,realizado,51,7,68
+174,68.0,227.49,11557.5,comercial,41.0,realizado,2,15,175
+172,130.0,233.99,10179.65,comercial,55.0,realizado,15,31,176
+67,283.0,585.57,10631.68,privado,20.0,no realizado,52,,177
+176,258.0,248.59,11456.69,comercial,357.0,realizado,31,2,178
+48,113.0,235.17,10063.04,comercial,76.0,realizado,28,,62
+126,311.0,561.6,11305.34,privado,20.0,realizado,53,,179
+23,17.0,226.9,11636.69,comercial,357.0,no realizado,48,0,180
+236,194.0,277.81,10807.55,comercial,56.0,realizado,38,,181
+120,271.0,277.64,10915.07,comercial,23.0,realizado,15,,184
+51,22.0,241.45,12293.41,comercial,41.0,no realizado,28,,99
+116,162.0,264.74,10233.21,comercial,43.0,realizado,48,23,186
+228,43.0,275.63,11160.01,comercial,70.0,no realizado,36,8,187
+217,143.0,232.38,10529.93,comercial,209.0,realizado,38,,122
+0,123.0,538.47,12506.79,privado,49.0,realizado,48,,191
+150,322.0,343.82,16673.88,militar,11.0,realizado,53,52,192
+242,7.0,275.21,12214.18,comercial,41.0,no realizado,38,,87
+107,90.0,226.02,11980.82,comercial,55.0,realizado,10,,194
+143,84.0,249.1,10082.09,comercial,89.0,realizado,25,50,195
+2,32.0,265.96,11489.52,comercial,504.0,realizado,15,51,190
+158,282.0,583.48,11892.55,privado,23.0,no realizado,2,,196
+108,286.0,538.13,10062.81,privado,23.0,no realizado,48,,197
+28,188.0,240.89,11537.91,comercial,348.0,realizado,36,,198
+119,238.0,231.46,12526.83,comercial,82.0,realizado,15,2,199
+149,87.0,234.51,10291.01,comercial,44.0,realizado,25,,1
+235,326.0,323.47,15995.83,militar,89.0,realizado,52,,201
+140,176.0,297.64,16968.01,militar,255.0,no realizado,53,52,202
+72,225.0,244.83,10328.73,comercial,356.0,no realizado,51,,96
+4,170.0,254.96,11468.23,comercial,66.0,realizado,50,,58
+112,69.0,272.58,11010.78,comercial,356.0,realizado,25,,203
+43,202.0,234.07,11813.04,comercial,348.0,realizado,2,,116
+187,309.0,495.45,11538.72,privado,20.0,realizado,36,53,204
+144,318.0,309.4,16130.14,militar,255.0,no realizado,31,53,205
+146,210.0,230.96,10661.79,comercial,41.0,realizado,25,24,74
+33,104.0,272.35,11920.87,comercial,41.0,realizado,36,48,206
+189,66.0,272.72,10125.68,comercial,41.0,realizado,8,,28
+18,137.0,224.74,12244.11,comercial,44.0,realizado,0,,207
+113,194.0,260.43,11292.63,comercial,74.0,no realizado,25,,209
+74,131.0,257.54,10064.59,comercial,209.0,realizado,39,,117
+31,14.0,229.82,10066.85,comercial,66.0,realizado,25,36,210
+131,234.0,250.43,11634.36,comercial,369.0,realizado,0,,82
+121,3.0,272.04,11627.91,comercial,356.0,no realizado,23,,200
+93,53.0,264.79,11172.53,comercial,324.0,realizado,51,,12
+231,196.0,242.54,11320.75,comercial,66.0,realizado,50,38,212
+209,301.0,556.33,11552.56,privado,20.0,realizado,52,,213
+104,45.0,234.43,12242.75,comercial,70.0,no realizado,36,,214
+98,134.0,230.61,11578.35,comercial,23.0,realizado,51,,151
+157,80.0,251.63,12825.67,comercial,66.0,realizado,39,8,156
+204,82.0,247.72,10650.58,comercial,55.0,realizado,25,48,21
+47,172.0,270.52,10897.85,comercial,43.0,realizado,2,48,126
+225,143.0,232.38,10529.93,comercial,209.0,realizado,36,15,48
+129,274.0,260.28,12535.72,comercial,23.0,realizado,39,,113
+240,114.0,263.34,12675.4,comercial,357.0,realizado,36,,121
+142,69.0,255.35,12609.54,comercial,552.0,realizado,24,,208
+19,92.0,277.06,12043.92,comercial,369.0,realizado,0,48,170
+50,240.0,256.63,11859.02,comercial,356.0,realizado,48,,219
+95,19.0,266.48,10767.4,comercial,369.0,no realizado,48,,220
+191,312.0,482.32,11476.1,privado,21.0,realizado,2,51,221
+87,71.0,276.33,12379.03,comercial,70.0,realizado,36,51,142
+22,305.0,443.56,11476.29,privado,20.0,realizado,15,,222
+243,157.0,299.5,15884.71,militar,89.0,realizado,52,,224
+208,208.0,254.07,12303.07,comercial,504.0,realizado,48,2,161
+32,45.0,224.55,12737.25,comercial,70.0,realizado,7,,225
+84,71.0,276.33,12379.03,comercial,70.0,realizado,36,,155
+39,269.0,228.52,11233.68,comercial,357.0,realizado,36,7,149
+232,93.0,268.52,11751.88,comercial,44.0,realizado,38,,22
+218,143.0,232.38,10529.93,comercial,209.0,realizado,8,38,95
+137,110.0,260.74,10194.72,comercial,43.0,no realizado,48,,172
+200,53.0,260.97,10599.7,comercial,66.0,realizado,48,,127
+14,331.0,253.21,16977.97,militar,11.0,realizado,53,,227
+8,199.0,229.17,12666.63,comercial,356.0,realizado,7,,72
+10,5.0,223.05,12872.86,comercial,72.0,no realizado,51,,188
+70,168.0,267.59,12446.44,comercial,66.0,realizado,23,,218
+99,232.0,256.23,10501.64,comercial,348.0,no realizado,48,,229
+237,149.0,264.78,12938.02,comercial,66.0,realizado,38,36,228
+59,42.0,223.52,11944.22,comercial,41.0,realizado,23,15,185
+179,30.0,242.29,10242.0,comercial,356.0,no realizado,15,31,211
+26,107.0,236.16,10505.66,comercial,324.0,realizado,36,,232
+85,29.0,241.19,11112.56,comercial,89.0,realizado,51,,76
+3,9.0,275.63,12947.04,comercial,56.0,no realizado,36,,9
+9,118.0,608.59,12739.91,privado,10.0,realizado,15,2,233
+178,160.0,278.6,11057.91,comercial,43.0,realizado,31,,85
+234,264.0,230.7,12132.1,comercial,357.0,realizado,38,36,45
+192,246.0,243.14,11232.95,comercial,209.0,realizado,24,8,124
+213,67.0,239.41,11352.56,comercial,504.0,realizado,33,,20
+92,2.0,230.74,10446.61,comercial,55.0,no realizado,0,,11
+215,39.0,274.72,10590.24,comercial,41.0,no realizado,33,,15
+30,299.0,542.82,10683.72,privado,21.0,realizado,15,,234
+219,143.0,232.38,10529.93,comercial,209.0,realizado,36,,217
+184,227.0,223.03,12569.05,comercial,369.0,no realizado,28,,223
+239,17.0,273.38,11912.48,comercial,76.0,realizado,38,36,215
+75,126.0,240.59,10648.6,comercial,552.0,realizado,10,38,226
+168,138.0,242.65,10834.01,comercial,357.0,realizado,10,2,231
+216,143.0,232.38,10529.93,comercial,209.0,realizado,8,36,235
+114,224.0,253.59,10389.27,comercial,56.0,no realizado,15,,230
+198,147.0,539.56,10966.91,privado,20.0,realizado,39,48,236
+91,245.0,234.87,10092.79,comercial,55.0,realizado,51,0,237
+57,51.0,260.91,11734.52,comercial,41.0,realizado,31,,238
+205,230.0,256.07,12344.11,comercial,356.0,no realizado,2,,4
+117,48.0,234.19,11633.8,comercial,504.0,no realizado,39,,93
+118,60.0,234.66,10056.75,comercial,62.0,realizado,15,,193
+37,148.0,272.26,11430.75,comercial,82.0,no realizado,8,,239
+222,143.0,232.38,10529.93,comercial,209.0,realizado,38,,8
+21,121.0,250.17,10216.55,comercial,324.0,realizado,7,,183
+203,46.0,228.41,11950.49,comercial,369.0,no realizado,2,,110
+109,156.0,259.57,12406.17,comercial,89.0,realizado,25,38,241
+139,10.0,254.79,10498.03,comercial,209.0,no realizado,25,,159
+133,184.0,248.59,11686.59,comercial,43.0,realizado,28,,240
+62,181.0,500.75,11029.05,privado,55.0,realizado,2,36,242
+27,207.0,269.07,10169.44,comercial,55.0,realizado,36,25,182
+82,71.0,276.33,12379.03,comercial,70.0,realizado,7,,189
+71,52.0,233.3,10258.86,comercial,72.0,no realizado,23,,216
+24,134.0,244.35,10359.04,comercial,564.0,realizado,0,8,136
+167,122.0,223.79,11325.5,comercial,23.0,realizado,39,,153
+162,125.0,449.98,11664.65,privado,20.0,no realizado,52,36,243

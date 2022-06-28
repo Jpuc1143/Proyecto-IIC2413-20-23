@@ -1,0 +1,40 @@
+aerodromo_id,nombre,codigo_IATA,codigo_ICAO,coordenada_id,ciudad_id
+71,Aeropuerto Internacional de Nueva York,XSAM,WHO,0,0
+11,Aeropuerto Internacional John F. Kennedy,FOLH,CKR,1,0
+57,Aeropuerto de Milán-Malpensa,TCGF,SPT,2,1
+55,Aeropuerto de Roma-Fiumicino,TBJM,SFF,3,2
+37,Aeropuerto Internacional Ben Gurión,NZTP,KZN,4,3
+27,Aeropuerto Internacional de El Cairo,KZZS,HRV,5,4
+73,Aeropuerto Internacional de Copiapo,XSZW,WKT,6,5
+75,Aeropuerto Big Apple,YHEP,YGY,7,0
+33,Aeropuerto Internacional de Pekín,NBMQ,JTM,8,6
+45,Aeropuerto de Ámsterdam-Schiphol,RCQR,OHI,9,7
+65,Aeropuerto Internacional de Maiquetía Simón Bolívar,VBIT,UYL,10,8
+41,Aeropuerto Internacional de Icheon,PVOW,LMF,11,9
+15,Aeropuerto Internacional de San Francisco,GPRK,DUU,12,10
+69,Aeropuerto Internacional Ataturk,XOEY,VNN,13,11
+25,Aeropuerto Internacional Kingsford Smith,KMPW,HOX,14,12
+67,Aeropuerto de Ibiza,XEWM,VBH,15,13
+61,Aeropuerto Internacional Eleftherios Venizelos,UQQX,TQV,16,14
+21,Aeropuerto Internacional Toronto Pearson,IWJC,HKA,17,15
+35,Aeropuerto Internacional Pudong,NZTG,KFE,18,16
+13,Aeropuerto Internacional de Miami,GAWW,CPH,19,17
+63,Aeropuerto Internacional Indira Gandhi,URLQ,UAU,20,18
+3,Aeropuerto Internacional de Ezeiza,BVWK,BAH,21,19
+59,Aeropuerto de Hong Kong,TQQZ,TEF,22,20
+7,Aeropuerto Internacional de Galeão,EEGZ,BXS,23,21
+43,Aeropuerto Internacional de Carrasco,PYIM,NVI,24,22
+29,Aeropuerto de Adolfo Suárez Madrid-Barajas,MBOO,HSJ,25,23
+17,Aeropuerto de la Ciudad de Londres,GSPA,EPM,26,24
+49,Aeropuerto Internacional El Alto,SGWN,QJM,27,25
+53,Aeropuerto Internacional Jorge Chávez,TAZY,RRK,28,26
+51,Aeropuerto Internacional de la Ciudad del Cabo,SIMJ,RFP,29,27
+19,Aeropuerto de París-Charles de Gaulle,HGZT,HCM,30,28
+31,Aeropuerto Josep Tarradellas Barcelona-El Prat,MVPW,JIZ,31,29
+23,Aeropuerto Internacional de Melbourne,JKRA,HNB,32,30
+5,Aeropuerto Internacional de São Paulo-Guarulhos,DZFP,BKT,33,31
+1,Aeropuerto Internacional Arturo Merino Benítez,BLFS,AWR,34,5
+9,Aeropuerto Internacional O'Hare,FCJT,BYB,35,32
+47,Aeropuerto Internacional de Cancún,SDSC,PKS,36,33
+39,Aeropuerto Internacional de Haneda,PFXE,LCX,37,34
+77,Aeropuerto Internacional de Australia,ZGUA,ZLQ,38,12

@@ -1,0 +1,36 @@
+ciudad_id,nombre_ciudad,pais_id
+0,Nueva York,0
+1,Milan,1
+2,Roma,1
+3,Tel Aviv,2
+4,El Cairo,3
+5,Santiago,4
+6,Beijing,2
+7,Amsterdam,5
+8,Caracas,6
+9,Seul,7
+10,San Francisco,0
+11,Estambul,8
+12,Sidney,9
+13,Ibiza,10
+14,Atenas,11
+15,Toronto,12
+16,Shangai,2
+17,Miami,0
+18,Nueva Delhi,13
+19,Buenos Aires,14
+20,Hong Kong,15
+21,Rio de Janeiro,16
+22,Montevideo,17
+23,Madrid,10
+24,Londres,18
+25,La Paz,19
+26,Lima,20
+27,Ciudad del Cabo,21
+28,Paris,22
+29,Barcelona,10
+30,Melbourne,9
+31,Sao Pablo,16
+32,Chicago,0
+33,Cancun,23
+34,Tokio,24
