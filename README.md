@@ -28,9 +28,8 @@ De esta forma se muestras líneas que unen los puntos de salida y de llegada de 
 
 * Los datos con los cuales se modificó la base de datos, fueron extraidos de la siguiente página web: https://www.openaip.net
 
-* Si en el inicio de la aplicación web, la persona se logea con un usuario o contraseña incorrecta, se mostrará un mensaje de error de login y se permanecerá en la misma página hasta que el usuario escriba un usuario y contraseña válida.
-
 ## Corrección de los requerimientos no intuitivos de esta entrega
+* Si en el inicio de la aplicación web, la persona se logea con un usuario o contraseña incorrecta, se mostrará un mensaje de error de login y se permanecerá en la misma página hasta que el usuario escriba un usuario y contraseña válida.
 
 ## Forma de registrar contraseñas a usuarios existentes
 * Las contraseñas de las Compañías Aéreas son un número aleatorio de 8 digitos.
