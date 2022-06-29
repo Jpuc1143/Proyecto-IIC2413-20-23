@@ -1,3 +1,18 @@
+DROP TABLE public.aerodromos CASCADE;
+DROP TABLE public.aeronave CASCADE;
+DROP TABLE public.certificado CASCADE;
+DROP TABLE public.ciudad CASCADE;
+DROP TABLE public.compania CASCADE;
+DROP TABLE public.coordenada CASCADE;
+DROP TABLE public.fpl CASCADE;
+DROP TABLE public.licencia CASCADE;
+DROP TABLE public.operaciones CASCADE;
+DROP TABLE public.pais CASCADE;
+DROP TABLE public.pista CASCADE;
+DROP TABLE public.propuestas CASCADE;
+DROP TABLE public.puerto CASCADE;
+DROP TABLE public.ruta CASCADE;
+DROP TABLE public.vuelo CASCADE;
 --
 -- PostgreSQL database dump
 --
