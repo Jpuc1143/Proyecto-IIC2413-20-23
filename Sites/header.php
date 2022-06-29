@@ -20,11 +20,11 @@
 <?php 
 	if (isset($_SESSION["msg"])) {
 		if (isset($_SESSION["msg_class"])) {
-			$msg_class = "alert-".$_SESSION["msg_class"];
+			$msg_class = $_SESSION["msg_class"];
 		} else {
-			$msg_class = "";
+			$msg_class = "danger";
 		}
-		echo '<div class="alert '.$msg_class.'">'.$_SESSION['msg']."</div>";
+		echo '<div class="alert alert-'.$msg_class.'">'.$_SESSION['msg']."</div>";
 		unset($_SESSION["msg"]);
 		unset($_SESSION["msg_class"]);
 	}

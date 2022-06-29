@@ -19,7 +19,7 @@ if (isset($_SESSION['usuario_id'])) {
 			require("./compania_aerea.php");
 			break;
 		case 'pasajero':
-			echo 'pasajero';
+			require("./pasajeros.php");
 			break;
 	}
 }

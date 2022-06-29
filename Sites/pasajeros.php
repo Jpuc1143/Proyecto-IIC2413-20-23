@@ -1,45 +1,40 @@
 <?php
 require("./config/databaseconnect.php");
 
-$username = 'Zachary Davenport'; #$_SESSION['usuario_nombre']
-$id = 23679; #se borra
+$username = $_SESSION['usuario_nombre'];
 
 #Muestra datos usuario
 $query = "SELECT pasaporte, nombre
         FROM persona
-        WHERE nombre = :username 
-        AND id = :id;";
+        WHERE pasaporte = :username;";
 $result = $db2 -> prepare($query);
 $result -> bindParam(":username", $username);
-$result -> bindParam(":id", $id); #se borra
 $result -> execute();
 $data = $result -> fetchAll();
 
 
 #Muestra ciudades disponibles para vuelos
-$query2 = "SELECT ciudad_id, nombre_ciudad
+$query2 = "SELECT id, nombre
         FROM ciudad
-        ORDER BY nombre_ciudad ;";
-$result2 = $db -> prepare($query2);
+        ORDER BY nombre;";
+$result2 = $db2 -> prepare($query2);
 $result2 -> execute();
 $data2 = $result2 -> fetchAll();
 
 #Encuentra id de persona
 $query4 = "SELECT id
         FROM persona
-        WHERE pasaporte = :pasaporte 
-        ;";
+        WHERE pasaporte = :pasaporte;";
 $result4 = $db2 -> prepare($query4);
-$result4 -> bindParam(":pasaporte", $data[0]['pasaporte']);
+$result4 -> bindParam(":pasaporte", $username);
 $result4 -> execute();
 $data4 = $result4 -> fetchAll();
+$id = $data4[0]["id"];
 
 #Muestra reservas del usuario
-$query3 = "SELECT vuelo.codigo 
-        FROM reserva, vuelo
-        WHERE reserva.cliente_id = :id
-        AND reserva.codigo LIKE vuelo.codigo%
-        ;";
+$query3 = "SELECT reserva.codigo 
+        FROM reserva
+        WHERE reserva.cliente_id = :id;";
 $result3 = $db2 -> prepare($query3);
 $result3 -> bindParam(":id", $id);
 $result3 -> execute();
@@ -80,7 +75,7 @@ $data3 = $result3 -> fetchAll();
     <?php 
         foreach($data2 as $d2 => $id){
             ?>
-            <option value="<?php echo $id['ciudad_id']; ?>"><?php echo $id['nombre_ciudad']; ?></option>
+            <option value="<?php echo $id['id']; ?>"><?php echo $id['nombre']; ?></option>
             <?php
         };
     ?></select></div>
@@ -89,7 +84,7 @@ $data3 = $result3 -> fetchAll();
     <?php 
         foreach($data2 as $d2 => $id){
             ?>
-            <option value="<?php echo $id['ciudad_id']; ?>"><?php echo $id['nombre_ciudad']; ?></option>
+            <option value="<?php echo $id['id']; ?>"><?php echo $id['nombre']; ?></option>
             <?php
         };
     ?></select></div>
