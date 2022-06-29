@@ -6,7 +6,7 @@ $query = "SELECT *
     $result = $db -> prepare($query);
     $result -> execute();
     $data = $result -> fetchAll();
-    $header = array("ID propuesta", "Fecha envío", "Compañía", "Estado", "Código","Fecha salida","Fecha llegada","Aerodromo salida","Aerodromo llegada","ID Aeronave");
+    $header = array("ID propuesta", "Fecha envío", "Compañía", "Estado", "Código","Fecha salida","Fecha llegada","Aerodromo salida","Aerodromo llegada","ID Aeronave","Aceptar","Rechazar");
 ?>
 
 <body>
