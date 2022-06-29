@@ -73,21 +73,22 @@ $data3 = $result3 -> fetchAll();
     <div>Seleccione Fecha de salida <input type="date" name = "fecha" value="Fecha de Despegue"></div>
     <div>Seleccione Ciudad de Origen <select name="origen" id="ciudad_o">
     <?php 
-        foreach($data2 as $d2 => $id){
+        foreach($data2 as $d2 => $ad){
             ?>
-            <option value="<?php echo $id['id']; ?>"><?php echo $id['nombre']; ?></option>
+            <option value="<?php echo $ad['id']; ?>"><?php echo $ad['nombre']; ?></option>
             <?php
         };
     ?></select></div>
     <div>Seleccione Ciudad de Destino
     <select name="destino" id="ciudad_d">
     <?php 
-        foreach($data2 as $d2 => $id){
+        foreach($data2 as $d2 => $ad){
             ?>
-            <option value="<?php echo $id['id']; ?>"><?php echo $id['nombre']; ?></option>
+            <option value="<?php echo $ad['id']; ?>"><?php echo $ad['nombre']; ?></option>
             <?php
         };
     ?></select></div>
-    <div><input type='hidden' name='persona_id' value=<?php $id ?> />
+    <div><input type='hidden' name='persona_id' value=<?php echo $id ?> />
+    <div><input type='hidden' name='reservador' value=<?php echo $id ?> />
     <div><button type="submit" value="Buscar"> Buscar</div>
 </form>
