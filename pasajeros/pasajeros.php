@@ -4,20 +4,17 @@
 <?php
 require("./config/databaseconnect.php");
 
-$username = 'Zachary Davenport'; #$_SESSION['usuario_nombre']
-$id = 23679; #se borra
+$username = $_SESSION['usuario_nombre'];
 
 #Muestra datos usuario
 $query = "SELECT pasaporte, nombre
         FROM persona
-        WHERE nombre = :username 
-        AND id = :id;";
+        WHERE pasaporte = :username 
+        ;";
 $result = $db2 -> prepare($query);
 $result -> bindParam(":username", $username);
-$result -> bindParam(":id", $id); #se borra
 $result -> execute();
 $data = $result -> fetchAll();
-
 
 #Muestra ciudades disponibles para vuelos
 $query2 = "SELECT ciudad_id, nombre_ciudad
@@ -36,6 +33,17 @@ $result4 = $db2 -> prepare($query4);
 $result4 -> bindParam(":pasaporte", $data[0]['pasaporte']);
 $result4 -> execute();
 $data4 = $result4 -> fetchAll();
+
+#Encuentr id usuario
+$query5 = "SELECT id 
+        FROM usuario
+        WHERE pasaporte = :username
+        ;";
+$result5 = $db2 -> prepare($query5);
+$result5 -> bindParam(":id", $username);
+$result5 -> execute();
+$data5 = $result5 -> fetchAll();
+$id = $data5[0][0];
 
 #Muestra reservas del usuario
 $query3 = "SELECT vuelo.codigo 
