@@ -27,11 +27,22 @@ $result2 = $db -> prepare($query2);
 $result2 -> execute();
 $data2 = $result2 -> fetchAll();
 
+#Encuentra id de persona
+$query4 = "SELECT id
+        FROM persona
+        WHERE pasaporte = :pasaporte 
+        ;";
+$result4 = $db2 -> prepare($query4);
+$result4 -> bindParam(":pasaporte", $data[0]['pasaporte']);
+$result4 -> execute();
+$data4 = $result4 -> fetchAll();
 
 #Muestra reservas del usuario
-$query3 = "SELECT codigo 
-        FROM reserva 
-        WHERE cliente_id = :id;";
+$query3 = "SELECT vuelo.codigo 
+        FROM reserva, vuelo
+        WHERE reserva.cliente_id = :id
+        AND reserva.codigo LIKE vuelo.codigo%
+        ;";
 $result3 = $db2 -> prepare($query3);
 $result3 -> bindParam(":id", $id);
 $result3 -> execute();
@@ -85,6 +96,7 @@ $data3 = $result3 -> fetchAll();
             <?php
         };
     ?></select></div>
+    <div><input type='hidden' name='persona_id' value=<?php $data4[0][0] ?> />
     <div><button type="submit" value="Buscar"> Buscar</div>
 </form>
 </body>
