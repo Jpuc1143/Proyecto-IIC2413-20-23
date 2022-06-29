@@ -6,7 +6,6 @@ $query = "SELECT *
     $result = $db -> prepare($query);
     $result -> execute();
     $data = $result -> fetchAll();
-    $header = array("ID propuesta", "Fecha envío", "Compañía", "Estado", "Código","Fecha salida","Fecha llegada","Aerodromo salida","Aerodromo llegada","ID Aeronave","Decisión");
 ?>
 
 <body>
@@ -24,32 +23,29 @@ $query = "SELECT *
 
     <table>
     <tr>
-    <?php
-        echo '<table class="table table-striped table-hover">';
-        echo '<tbody>';
-        for($i=0; $i<count($header); $i++) {
-            echo '<th>'.$header[$i]."</th>";
-        }
-        echo '</tr></thead>';
-        echo '<tbody>';
-    ?>
+        <th> ID propuesta: </th>
+        <th> Fecha envío: </th>
+        <th> Compañía: </th>
+        <th> Estado: </th>
+        <th> Código: </th>
+        <th> Fecha salida: </th>
+        <th> Fecha llegada: </th>
+        <th> Aerodromo salida: </th>
+        <th> Aerodromo llegada: </th>
+        <th> ID Aeronave: <t/>
     </tr>
-    <?php
-    echo '<table class="table table-striped table-hover">';
-    echo '<tbody>';
-    ?>
     <?php foreach ($data as $d): ?>
         <tr>
-            <td><?php echo '<th>'.$d[0]."</th>"; ?></td>
-            <td><?php echo '<th>'.$d[1]."</th>";; ?></td>
-            <td><?php echo '<th>'.$d[2]."</th>";; ?></td>
-            <td><?php echo '<th>'.$d[5]."</th>";; ?></td>
-            <td><?php echo '<th>'.$d[6]."</th>";; ?></td>
-            <td><?php echo '<th>'.$d[7]."</th>";; ?></td>
-            <td><?php echo '<th>'.$d[8]."</th>";; ?></td>
-            <td><?php echo '<th>'.$d[9]."</th>";; ?></td>
-            <td><?php echo '<th>'.$d[10]."</th>";; ?></td>
-            <td><?php echo '<th>'.$d[11]."</th>"; ?></td>
+            <td><?php echo $d[0]; ?></td>
+            <td><?php echo $d[1]; ?></td>
+            <td><?php echo $d[2]; ?></td>
+            <td><?php echo $d[5]; ?></td>
+            <td><?php echo $d[6]; ?></td>
+            <td><?php echo $d[7]; ?></td>
+            <td><?php echo $d[8]; ?></td>
+            <td><?php echo $d[9]; ?></td>
+            <td><?php echo $d[10]; ?></td>
+            <td><?php echo $d[11]; ?></td>
             <td>
                 <form method="post" action="aceptar_propuesta.php">
                     <input type="hidden" value='<?php echo $d[6]; ?>' name="codigo"/>
