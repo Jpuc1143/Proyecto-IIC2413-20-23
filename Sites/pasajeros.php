@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html>
-<body>
 <?php
 require("./config/databaseconnect.php");
 
@@ -99,5 +96,3 @@ $data3 = $result3 -> fetchAll();
     <div><input type='hidden' name='persona_id' value=<?php $data4[0][0] ?> />
     <div><button type="submit" value="Buscar"> Buscar</div>
 </form>
-</body>
-</html> 
