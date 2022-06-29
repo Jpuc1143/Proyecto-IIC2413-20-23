@@ -11,14 +11,18 @@ $p3 = $_POST['pasaporte_3'];
 
 $query4 = "SELECT *
             FROM vuelo
-            WHERE vuelo_id = $vuelo
+            WHERE vuelo_id = :vuelo
             ;";
 $result4 = $db -> prepare($query4);
+$result4 -> bindParam(":vuelo",$vuelo);
 $result4 -> execute();
 $data4 = $result4 -> fetchAll();
 
+print_r($data4);
+
 $fechasalida = $data4[0]['fecha_salida'];
 $fechallegada = $data4[0]['fecha_llegada'];
+$codigo_vuelo = $data4[0]['codigo'];
 
 if ($p1 == "Código de Pasaporte" && $p2 == "Código de Pasaporte" && $p3 == "Código de Pasaporte"){
     echo "No se ingresaron pasaportes";}
@@ -46,14 +50,14 @@ else{
     $result3 = $db2 -> prepare($query3);
     $result3 -> execute();
     $data3 = $result3 -> fetchAll();
-    
-    if (!$data && $p1 =! 'Código de Pasaporte'){
+
+    if (!$data && $p1 != 'Código de Pasaporte'){
         echo "El pasaporte $p1 no es válido";
     }
-    if (!$data2 && $p2 =! 'Código de Pasaporte'){
+    if (!$data2 && $p2 != 'Código de Pasaporte'){
         echo "El pasaporte $p2 no es válido";
     }
-    if (!$data3 && $p3 =! 'Código de Pasaporte'){
+    if (!$data3 && $p3 != 'Código de Pasaporte'){
         echo "El pasaporte $p3 no es válido";
     }
     else{
@@ -103,7 +107,51 @@ else{
         $data7 = $result7 -> fetchAll();
         
         if(!$data5 && !$data6 && !$data7 ){
-            #actualizar base con procedimiento almacenado
+            echo "<form action='hecho.php' method='post'>";
+            if (!$data5 && $p1 != 'Código de Pasaporte'){
+            echo "
+            <div>Seleccione Clase <select name='clase_1' id='clase_1'>
+            <option value='0'> Primera clase </option>
+            <option value='1'> Ejecutiva </option>
+            <option value='2'> Economica </option>
+            </select></div>
+            <div>¿Desea agregar comida y maleta?<select name='agregar_1' id='agregar_1'>
+            <option value='0'> Si </option>
+            <option value='1'> No </option>
+            </select></div>  
+            <div><input type='hidden' name='pasaporte_1' value=$p1 /> 
+            ";}
+            if (!$data6 && $p2 != 'Código de Pasaporte'){
+                echo "
+                <div>Seleccione Clase <select name='clase_2' id='clase_2'>
+            <option value='0'> Primera clase </option>
+            <option value='1'> Ejecutiva </option>
+            <option value='2'> Economica </option>
+            </select></div>
+            <div>¿Desea agregar comida y maleta?<select name='agregar_2' id='agregar_2'>
+            <option value='0'> Si </option>
+            <option value='1'> No </option>
+            </select></div>  
+            <div><input type='hidden' name='pasaporte_2' value=$p2 /> 
+                ";}
+            if (!$data7 && $p3 != 'Código de Pasaporte'){
+            echo "
+            <div>Seleccione Clase <select name='clase_3' id='clase_3'>
+            <option value='0'> Primera clase </option>
+            <option value='1'> Ejecutiva </option>
+            <option value='2'> Economica </option>
+            </select></div>
+            <div>¿Desea agregar comida y maleta?<select name='agregar_3' id='agregar_3'>
+            <option value='0'> Si </option>
+            <option value='1'> No </option>
+            </select></div>  
+            <div><input type='hidden' name='pasaporte_3' value=$p3 /> 
+            ";}
+            echo 
+            "<div><input type='hidden' name='codigo_vuelo' value=$codigo_vuelo />
+            <div><button type='submit' value='Reservar'> Reservar </div>
+            ";
+
         }
         else{
             echo "Existen pasajeros que poseen vuelos para la fecha indicada";
