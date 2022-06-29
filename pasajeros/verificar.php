@@ -18,8 +18,6 @@ $result4 -> bindParam(":vuelo",$vuelo);
 $result4 -> execute();
 $data4 = $result4 -> fetchAll();
 
-print_r($data4);
-
 $fechasalida = $data4[0]['fecha_salida'];
 $fechallegada = $data4[0]['fecha_llegada'];
 $codigo_vuelo = $data4[0]['codigo'];

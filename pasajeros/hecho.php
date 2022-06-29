@@ -33,21 +33,17 @@ $vuelo_id = $data2[0][0];
 
     $persona_id_1 = $data[0][0];
 
-    $query8 = "SELECT insertar_reserva(:reserva_id, :cliente_id, :codigo);";
+    $query8 = "SELECT insertar_reserva(:cliente_id, :codigo);";
     $result8 = $db2 -> prepare($query8);
-    $result8 -> bindParam(":reserva_id", $vuelo_id);
     $result8 -> bindParam(":cliente_id", $persona_id_1);
     $result8 -> bindParam(":codigo", $reserva_id);
     $result8 -> execute();
     $data8 = $result8 -> fetchAll();
 
-    $query9 = "SELECT insertar_ticket(:numero, :reserva_id, :vuelo_id, :persona_id, :numero_asiento, :clase, :comida_y_maleta);";
+    $query9 = "SELECT insertar_ticket(:vuelo_id, :persona_id, :clase, :comida_y_maleta);";
     $result9 = $db2 -> prepare($query9);
-    $result9 -> bindParam(":numero", $numero_asiento_1);
-    $result9 -> bindParam(":reserva_id", $vuelo_id);
     $result9 -> bindParam(":persona_id", $persona_id_1);
     $result9 -> bindParam(":vuelo_id", $reserva_id);
-    $result9 -> bindParam(":numero_asiento", $numero_asiento_1);
     $result9 -> bindParam(":clase", $clase_1);
     $result9 -> bindParam(":comida_y_maleta", $comida_y_maleta_1);
     $result9 -> execute();
@@ -70,21 +66,17 @@ $vuelo_id = $data2[0][0];
 
     $persona_id_2 = $data6[0][0];
 
-    $query10 = "SELECT insertar_reserva(:reserva_id, :cliente_id, :codigo);";
+    $query10 = "SELECT insertar_reserva(:cliente_id, :codigo);";
     $result10 = $db2 -> prepare($query10);
-    $result10 -> bindParam(":reserva_id", $vuelo_id);
     $result10 -> bindParam(":cliente_id", $persona_id_2);
     $result10 -> bindParam(":codigo", $reserva_id);
     $result10 -> execute();
     $data10 = $result10 -> fetchAll();
 
-    $query11 = "SELECT insertar_ticket(:numero, :reserva_id, :vuelo_id, :persona_id, :numero_asiento, :clase, :comida_y_maleta);";
+    $query11 = "SELECT insertar_ticket(:vuelo_id, :persona_id, :clase, :comida_y_maleta);";
     $result11 = $db2 -> prepare($query11);
-    $result11 -> bindParam(":numero", $numero_asiento_2);
-    $result11 -> bindParam(":reserva_id", $vuelo_id);
     $result11 -> bindParam(":persona_id", $persona_id_2);
     $result11 -> bindParam(":vuelo_id", $reserva_id);
-    $result11 -> bindParam(":numero_asiento", $numero_asiento_2);
     $result11 -> bindParam(":clase", $clase_2);
     $result11 -> bindParam(":comida_y_maleta", $comida_y_maleta_2);
     $result11 -> execute();
@@ -106,21 +98,17 @@ $vuelo_id = $data2[0][0];
 
         $persona_id_3 = $data7[0][0];
 
-        $query12 = "SELECT insertar_reserva(:reserva_id, :cliente_id, :codigo);";
+        $query12 = "SELECT insertar_reserva(:cliente_id, :codigo);";
         $result12 = $db2 -> prepare($query12);
-        $result12 -> bindParam(":reserva_id", $vuelo_id);
         $result12 -> bindParam(":cliente_id", $persona_id_3);
         $result12 -> bindParam(":codigo", $reserva_id);
         $result12 -> execute();
         $data12 = $result12 -> fetchAll();
 
-        $query13 = "SELECT insertar_ticket(:numero, :reserva_id, :vuelo_id, :persona_id, :numero_asiento, :clase, :comida_y_maleta);";
+        $query13 = "SELECT insertar_ticket(:vuelo_id, :persona_id, :clase, :comida_y_maleta);";
         $result13 = $db2 -> prepare($query13);
-        $result13 -> bindParam(":numero", $numero_asiento_3);
-        $result13 -> bindParam(":reserva_id", $vuelo_id);
         $result13 -> bindParam(":persona_id", $persona_id_3);
         $result13 -> bindParam(":vuelo_id", $reserva_id);
-        $result13 -> bindParam(":numero_asiento", $numero_asiento_3);
         $result13 -> bindParam(":clase", $clase_2);
         $result13 -> bindParam(":comida_y_maleta", $comida_y_maleta_3);
         $result13 -> execute();
