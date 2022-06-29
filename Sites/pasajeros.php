@@ -88,6 +88,6 @@ $data3 = $result3 -> fetchAll();
             <?php
         };
     ?></select></div>
-    <div><input type='hidden' name='persona_id' value=<?php $data4[0][0] ?> />
+    <div><input type='hidden' name='persona_id' value=<?php $id ?> />
     <div><button type="submit" value="Buscar"> Buscar</div>
 </form>

@@ -1,8 +1,6 @@
-<!DOCTYPE html>
-<html>
-<body>
 <?php
 require("./config/databaseconnect.php");
+require("header.php");
 
 $fecha = $_POST["fecha"];
 $fecha2 = strtotime($_POST["fecha"]);
@@ -10,35 +8,36 @@ $newformat = date('Y-m-d',$fecha2);
 $ciudad_o = $_POST["origen"];
 $ciudad_d = $_POST["destino"];
 
-$query2 = "SELECT nombre_ciudad
+$query2 = "SELECT nombre
             FROM ciudad
-            WHERE ciudad_id = $ciudad_d
+            WHERE id = $ciudad_d
             ;";
-$result2 = $db -> prepare($query2);
+$result2 = $db2 -> prepare($query2);
 $result2 -> execute();
 $data2 = $result2 -> fetchAll();
 
-$query3 = "SELECT nombre_ciudad
+$query3 = "SELECT nombre
             FROM ciudad
-            WHERE ciudad_id = $ciudad_o
+            WHERE id = $ciudad_o
             ;";
-$result3 = $db -> prepare($query3);
+$result3 = $db2 -> prepare($query3);
 $result3 -> execute(); 
 $data3 = $result3 -> fetchAll();
 
 $query = "SELECT *
-            FROM vuelo, aerodromos, ciudad, ciudad AS c_dos, aerodromos AS dos
-            WHERE vuelo.aerodromo_salida = aerodromos.aerodromo_id
+            FROM vuelo, aerodromo, ciudad, ciudad AS c_dos, aerodromo AS dos
+            WHERE vuelo.aerodromo_salida_id = aerodromo.id
             AND vuelo.estado = 'aceptado'
-            AND aerodromos.ciudad_id = ciudad.ciudad_id
-            AND vuelo.aerodromo_llegada = dos.aerodromo_id
-            AND c_dos.ciudad_id = $ciudad_d
-            AND ciudad.ciudad_id = $ciudad_o
-            AND vuelo.fecha_salida = CAST('$newformat' AS DATE)
+            AND aerodromo.ciudad_id = ciudad.id
+            AND vuelo.aerodromo_llegada_id = dos.id
+            AND c_dos.id = $ciudad_d
+            AND ciudad.id = $ciudad_o
+            AND vuelo.fecha_salida::date = CAST('$newformat' AS DATE)
             ;";
-$result = $db -> prepare($query);
+$result = $db2 -> prepare($query);
 $result -> execute();
 $data = $result -> fetchAll();
+echo "<script>console.log(".json_encode($data).")</script>";
 
 $dat3 = $data3[0][0];
 $dat2 = $data2[0][0];
@@ -74,5 +73,4 @@ echo "Vuelos disponibles para la fecha $fecha entre las ciudades ", $data3[0][0]
     </table>
 	<button type="submit" value="Buscar"> Reservar</div>
 </form>
-</body>
-</html>
+<?php require("footer.html"); ?>
